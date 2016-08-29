@@ -26,6 +26,10 @@ module.exports = {
       // Async functions are converted to generators by babel-preset-latest
       async: false
     }],
+    // @decorator
+    require.resolve('babel-plugin-transform-decorators-legacy'),
+    // <Button onClick={::this.method} />
+    require.resolve('babel-plugin-transform-function-bind'),
     // Polyfills the runtime needed for async/await and generators
     [require.resolve('babel-plugin-transform-runtime'), {
       helpers: false,
