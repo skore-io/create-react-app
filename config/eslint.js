@@ -175,6 +175,31 @@ module.exports = {
     // 'import/no-named-as-default-member': 'warn',
     // 'import/no-unresolved': ['warn', { commonjs: true }],
 
+    // https://github.com/skore-io/honor-code/blob/master/code-style/javascript.md
+    'arrow-spacing': ['warn', {
+      'before': true,
+      'after': true
+    }],
+    'arrow-parens': 'warn',
+    'semi': ['warn', 'never'],
+    'array-bracket-spacing': ['warn', 'always'],
+    'block-spacing': ['warn', 'always'],
+    'comma-spacing': ['warn', {
+      before: false,
+      after: true
+    }],
+    'keyword-spacing': ['warn', {
+      before: true,
+      after: true
+    }],
+    'object-curly-spacing': ['warn', 'always'],
+    'space-before-blocks': ['warn', 'always'],
+    'template-curly-spacing': ['warn', 'always'],
+    'camelcase': ['warn', {
+      properties: 'always'
+    }],
+    'prefer-template': 'warn',
+
     // https://github.com/yannickcr/eslint-plugin-react/tree/master/docs/rules
     'react/jsx-equals-spacing': ['warn', 'never'],
     'react/jsx-no-duplicate-props': ['warn', { ignoreCase: true }],
