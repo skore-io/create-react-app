@@ -190,7 +190,7 @@ module.exports = {
   },
   plugins: [
     new StyleLintPlugin({
-      configFile: path.join(__dirname, 'stylelint.config.js'),
+      configFile: path.join(__dirname, 'stylelint.js'),
       context: 'src',
       files: '**/*.css',
       failOnError: false,
