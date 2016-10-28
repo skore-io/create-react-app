@@ -9,14 +9,11 @@ module.exports = {
       ignore: ['stylelint-commands', 'between-comments']
     } ],
     'declaration-colon-space-after': 'always',
+    'declaration-block-properties-order': 'alphabetical',
     indentation: [ 2, {
       except: ['value']
     }],
     'max-empty-lines': 1,
-    'rule-nested-empty-line-before': [ 'always', {
-      except: ['first-nested'],
-      ignore: ['after-comment']
-    } ],
-    'unit-whitelist': ['px', 'vh', 'vw', '%', 's']
+    'unit-whitelist': ['px', 'vh', 'vw', 's', 'deg']
   }
 }
