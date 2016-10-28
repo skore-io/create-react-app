@@ -4,7 +4,7 @@ module.exports = {
     'block-no-single-line': true,
     'color-named': [ 'never', {
       ignore: ['inside-function']
-    }]
+    }],
     'color-no-invalid-hex': true,
     'color-hex-case': 'upper',
     'color-hex-length': 'short',
@@ -20,7 +20,7 @@ module.exports = {
     'declaration-block-trailing-semicolon': 'always',
     'declaration-no-important': [ true, {
       severity: 'warning'
-    }]
+    }],
     indentation: [ 2, {
       except: ['value']
     }],
@@ -37,8 +37,6 @@ module.exports = {
     'selector-combinator-space-before': 'always',
     'selector-descendant-combinator-no-non-space': true,
     'selector-list-comma-newline-after': 'always',
-    'selector-list-comma-space-after': 'always',
-    'selector-list-comma-space-before': 'never',
     'selector-no-id': true,
     'selector-pseudo-class-case': 'lower',
     'selector-pseudo-class-no-unknown': true,
@@ -48,7 +46,7 @@ module.exports = {
     'shorthand-property-no-redundant-values': true,
     'string-quotes': 'single',
     'unit-case': 'lower',
-    'unit-whitelist': ['px', 'vh', 'vw', 's', 'deg'],
+    'unit-whitelist': ['px', 'vh', 'vw', '%', 's', 'deg'],
     'value-keyword-case': 'lower',
     'value-no-vendor-prefix': true
   }
