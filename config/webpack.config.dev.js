@@ -14,6 +14,7 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 var CaseSensitivePathsPlugin = require('case-sensitive-paths-webpack-plugin');
 var WatchMissingNodeModulesPlugin = require('../scripts/utils/WatchMissingNodeModulesPlugin');
 var webpackDashboardPlugin = require('webpack-dashboard/plugin');
+var StyleLintPlugin = require('stylelint-webpack-plugin');
 var paths = require('./paths');
 var env = require('./env');
 
@@ -188,6 +189,13 @@ module.exports = {
     ];
   },
   plugins: [
+    new StyleLintPlugin({
+      configFile: path.join(__dirname, 'stylelint.js'),
+      context: 'src',
+      files: '**/*.css',
+      failOnError: false,
+      quiet: false,
+    }),
     // Generates an `index.html` file with the <script> injected.
     new HtmlWebpackPlugin({
       inject: true,
