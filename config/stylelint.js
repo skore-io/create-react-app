@@ -3,7 +3,7 @@ module.exports = {
     'block-no-empty': true,
     'block-no-single-line': true,
     'color-named': [ 'never', {
-      igonre: ['inside-function']
+      ignore: ['inside-function']
     }]
     'color-no-invalid-hex': true,
     'color-hex-case': 'upper',
@@ -13,6 +13,7 @@ module.exports = {
     }],
     'declaration-bang-space-after': 'never',
     'declaration-block-no-duplicate-properties': true,
+    'declaration-block-no-redundant-longhand-properties': true,
     'declaration-block-properties-order': 'alphabetical',
     'declaration-block-semicolon-newline-after': 'always',
     'declaration-colon-space-after': 'always',
