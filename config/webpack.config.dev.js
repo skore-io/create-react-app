@@ -178,14 +178,14 @@ module.exports = {
   // We use PostCSS for autoprefixing only.
   postcss: function() {
     return [
+      StyleLint({
+        configFile: path.join(__dirname, 'stylelint.js'),
+        context: 'src',
+        files: '**/*.css',
+        failOnError: false,
+        quiet: false,
+      }),
       autoprefixer({
-        StyleLint({
-          configFile: path.join(__dirname, 'stylelint.js'),
-          context: 'src',
-          files: '**/*.css',
-          failOnError: false,
-          quiet: false,
-        }),
         browsers: [
           '>1%',
           'last 4 versions',
