@@ -46,7 +46,7 @@ module.exports = {
     'shorthand-property-no-redundant-values': true,
     'string-quotes': 'single',
     'unit-case': 'lower',
-    'unit-whitelist': ['px', 'vh', 'vw', '%', 's', 'deg'],
+    'unit-whitelist': ['px', 'vh', 'vw', '%', 's', 'x', 'deg'],
     'value-keyword-case': 'lower',
     'value-no-vendor-prefix': true
   }
